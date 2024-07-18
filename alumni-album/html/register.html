@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script>
+        function toggleAlumniFields() {
+            var role = document.getElementById("role").value;
+            var alumniFields = document.getElementById("alumniFields");
+            if (role === "alumni") {
+                alumniFields.style.display = "block";
+            } else {
+                alumniFields.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form action="../register.php" method="post">
+        <label for="username">Потребителско име:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Парола:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="email">Имейл:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="role">Роля:</label>
+        <select id="role" name="role" onchange="toggleAlumniFields()" required>
+            <option value="">Избери роля</option>
+            <option value="alumni">Алумни</option>
+            <option value="photographer">Фотограф</option>
+            <option value="admin">Админ</option>
+        </select><br>
+        
+        <div id="alumniFields" style="display: none;">
+            <h2>Информация за алумни</h2>
+            <label for="group_number">Номер на група:</label>
+            <input type="number" id="group_number" name="group_number"><br>
+            
+            <label for="potok_number">Номер на поток:</label>
+            <input type="number" id="potok_number" name="potok_number"><br>
+            
+            <label for="major">Специалност:</label>
+            <input type="text" id="major" name="major"><br>
+            
+            <label for="graduation_year">Година на завършване:</label>
+            <input type="number" id="graduation_year" name="graduation_year"><br>
+        </div>
+        
+        <input type="submit" value="Register">
+    </form>
+    <a href="index.html">Обратно към началната страница</a>
+</body>
+</html>

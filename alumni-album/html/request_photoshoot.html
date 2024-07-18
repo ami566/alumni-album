@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заяви фотосесия</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <nav class="menu menu-2">
+        <ul>
+            <li><a href="../profile.php">Профил</a></li>
+            <li><a href="../catalog2.php">Каталог със снимки</a></li> 
+            <li><a href="../photoshoots.php">Фотосесии</a></li>
+            <li><a href="../orders.php">Поръчки</a></li>
+            <li><a href="../logout.php">Изход</a></li>
+        </ul>
+    </nav>
+    <h1>Заяви фотосесия</h1>
+    <form action="../request_photoshoot.php" method="post">
+        <label for="session_date">Дата:</label>
+        <input type="datetime-local" id="session_date" name="session_date" required><br>
+        
+        <label for="place">Локация:</label>
+        <input type="text" id="place" name="place" required><br>
+        
+        <label for="type">Тип фотосесия:</label>
+        <select id="type" name="type" required>
+            <option value="group">Групова</option>
+            <option value="personal">Лична</option>
+        </select><br>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>

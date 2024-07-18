@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Качи снимка</title>
+</head>
+<body>
+    <nav class="menu menu-2">
+        <ul>
+            <li><a href="../profile.php">Профил</a></li>
+            <li><a href="../catalog2.php">Каталог със снимки</a></li> 
+            <li><a href="../photoshoots.php">Фотосесии</a></li>
+            <li><a href="../orders.php">Поръчки</a></li>
+            <li><a href="../logout.php">Изход</a></li>
+        </ul>
+    </nav>
+    <h2>Качи снимка</h2>
+    <form action="../upload_photo.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="photo" required><br>
+        <label for="Major">
+            Специалност:
+        <input type="text" name="Major">
+        </label>
+        <label for="Potok">
+            Поток:
+        <input type="text" name="Potok">
+        </label>
+        <label for="Group">
+            Група:
+        <input type="text" name="Group">
+        </label>
+        <label for="Event">
+            Събитие:
+        <input type="text" name="Event">
+        </label>
+        <input type="submit" value="Upload">
+    </form>
+
+</body>
+</html>
