@@ -1,7 +1,7 @@
 # Alumni Album
 
 ## 1. Overview
-The project involves developing a system for managing alumni data, organizing photo sessions, and creating personalized photo products.
+The project aims to develop a web-based system for managing alumni data, organizing photo sessions, and creating personalized photo products. The system is designed to handle various functionalities, including data registration, import/export, photo session management, and the creation of photo products based on user requests.
 
 ## 2. Requirements
 ### Roles
@@ -12,7 +12,7 @@ The project involves developing a system for managing alumni data, organizing ph
 ### Functional Requirements
 1. **Alumni Data Management**:
    - Register new alumni.
-   - Import/export alumni data by group, stream, specialty, and graduation year.
+   - Import/export alumni data by group, stream, major, and graduation year.
    - Edit alumni data.
 
 2. **Photo Session Management**:
@@ -93,7 +93,7 @@ The project involves developing a system for managing alumni data, organizing ph
 - Password
 - Email
 - Role
-- Specialty (for alumni users)
+- Major (for alumni users)
 - Stream
 - Group
 - Graduation Year
